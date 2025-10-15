@@ -33,7 +33,8 @@ button:focus {
     /* 替網頁最上面的區塊加入背景圖片 */
     border-radius: 0px;
     margin-bottom: 0px;
-    background-image: url("../img/header.png");
+    /* background-image: url("../img/header.png"); */
+    background: #000;
     background-size: cover;
     background-position: center bottom;
     height: 550px;
