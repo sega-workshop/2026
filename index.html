@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SEGA Workshop</title>
+    <title>SEGA2026 Workshop Website</title>
     <!-- <link rel="icon shortcut" href="./img/favicon.ico"> -->
     <!-- 連結Bootstrap.min.css -->
     <!-- 客製化Bootstrap CSS -->
     <link rel="stylesheet" href="./scss/bootstrap.css">
     <!-- 使用style.css -->
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.1.1/lib/p5.js"></script>
 </head>
 
 <body>
@@ -44,15 +45,29 @@
     </nav>
     <!-- navbar end -->
     <!-- header -->
-    <header id="header" class="jumbotron text-end text-white bg-dark">
+    <div id="canvas-container">
+    <header id="header" class="jumbotron text-end text-white"> <!--bg-dark">-->
         <div class="container">
             <h1 class="font-weight-bold pt-5 pb-3 header-text">
                 Software Engineering for Generative Art (SEGA) 2026
                 Workshop
             </h1>
-            <h2>July 5, 2026</h2>
+            <h2>July 5th or 6th, 2026</h2>
         </div>
     </header>
+     </div>
+     <script>
+        // pick a random sketch to show on load
+        let js_files = [
+            // 'fredericks-sega-1.js', 
+            'fredericks-sega-2.js',
+        ];
+        let index = Math.floor(Math.random()*js_files.length); 
+        const the_file = js_files[index];
+        const scriptElement = document.createElement('script');
+        scriptElement.src = `./js/sketches/${the_file}`;
+        document.body.appendChild(scriptElement)
+     </script>
     <!-- header end -->
     <!-- introSection -->
     <!-- 設定introSection 上下padding為5倍 -->
