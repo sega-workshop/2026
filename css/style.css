@@ -121,3 +121,7 @@ canvas {
 #header .container {
     background: rgba(10,10,10,0.5);
 }
+
+a {
+    color: #b967ff;
+}
