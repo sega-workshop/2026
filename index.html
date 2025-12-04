@@ -49,6 +49,8 @@
     <header id="header" class="jumbotron text-end text-white"> <!--bg-dark">-->
         <div class="container">
         </div>
+        <div id="script-author">
+        </div>
     </header>
      </div>
      <div id="sub-header">
@@ -62,18 +64,25 @@
      </div>
      <script>
         // pick a random sketch to show on load
+        let author_urls = {
+            'Erik Fredericks': 'https://efredericks.github.io',
+            'Benoit Baudry': 'https://softwarediversity.eu',
+        }
         let js_files = [
             // 'fredericks-sega-1.js', 
-
-            'fredericks-sega-2.js',
-            'fredericks-sega-3.js',
-            'fredericks-sega-4.js',
+            {'script': 'fredericks-sega-2.js', 'author': 'Erik Fredericks'},
+            {'script': 'fredericks-sega-3.js', 'author': 'Erik Fredericks'},
+            {'script': 'fredericks-sega-4.js', 'author': 'Erik Fredericks'},
         ];
         let index = Math.floor(Math.random()*js_files.length); 
-        const the_file = js_files[index];
+        const the_file = js_files[index].script;
         const scriptElement = document.createElement('script');
         scriptElement.src = `./js/sketches/${the_file}`;
         document.body.appendChild(scriptElement)
+
+        let author = js_files[index].author;
+        let author_url = author_urls[author];
+        document.getElementById("script-author").innerHTML = `Author: <a href='${author_url}' target='_blank'>${author}</a>`;
      </script>
     <!-- header end -->
     <!-- introSection -->

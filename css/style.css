@@ -143,3 +143,17 @@ canvas {
 a {
     color: #b967ff;
 }
+
+#script-author {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.25em 1em;
+    text-align: right;
+    font-size: 0.6em;
+    background: #00000099;
+}
+
+#script-author a {
+    color: #c3ff00;
+}
