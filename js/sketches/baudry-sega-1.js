@@ -1,4 +1,5 @@
-let cx, cy, count, xstep, ystep, glass, grow
+let cx, cy, count, xstep, ystep, glass, grow, xoff, xinc
+
 function setup() {
     container = document.getElementById('canvas-container');
     let canvas = createCanvas(container.clientWidth, container.clientHeight);
@@ -13,6 +14,8 @@ function setup() {
     grow = true
     xstep = container.clientWidth * 0.001
     ystep = container.clientHeight * 0.001
+    xoff = 0.0
+    xinc = 0.001
 }
 
 function draw() {
@@ -36,9 +39,10 @@ function draw() {
     else {
         grow=false
         if (count < 1242) {
-            if (random() < 0.42) {
+            if (noise(xoff) < 0.42) {
                 quad(x1, y1, x2, y2, x3, y3, x4, y4)
             }
+            xoff+=xinc  
         }
         else {
             if (glass > 0) {
