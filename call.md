@@ -6,6 +6,8 @@ With SEGA, the first workshop on software engineering and generative arts, we ai
 
 Deadline for submission: March 16, 2026.        
 
+Website for submission: https://sega26.hotcrp.com/
+
 As a source of inspiration rather than a closed list of topics, let us suggest some ideas of topics that we'd love to discuss with you: 
 
 # Generative Artworks / Software Technologies for the Arts
