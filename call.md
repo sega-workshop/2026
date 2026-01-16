@@ -4,6 +4,8 @@ You execute code to generate visuals or sound, you use creative coding for teach
 
 With SEGA, the first workshop on software engineering and generative arts, we aim at offering everyone who operates at the fringe of software and art an open forum to share, discuss and perform. Please, reach out with a demo,  presentation or performance idea! We welcome submissions of one page within the [Arsclassica Article Latex template](https://www.latextemplates.com/template/arsclassica-article).
 
+Deadline for submission: March 16, 2026.        
+
 As a source of inspiration rather than a closed list of topics, let us suggest some ideas of topics that we'd love to discuss with you: 
 
 # Generative Artworks / Software Technologies for the Arts
