@@ -38,10 +38,13 @@
                     <a class="nav-link" href="#agendaSection">Agenda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#speakerSection">Accepted Papers</a>
+                    <a class="nav-link" href="#keynoteSection">Keynote</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#sponsorSection">Sponsors</a>
+                    <a class="nav-link" href="#codingSection">Creative Coding Challenge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#speakerSection">Accepted Papers</a>
                 </li>
             </ul>
         </div>
@@ -49,41 +52,41 @@
     <!-- navbar end -->
     <!-- header -->
     <div id="canvas-container">
-    <header id="header" class="jumbotron text-end text-white"> <!--bg-dark">-->
-        <div class="container">
-        </div>
-        <div id="script-author">
-        </div>
-    </header>
-     </div>
-     <div id="sub-header">
-            <h1 class="font-weight-bold pt-5 pb-3 header-text">
-                Software Engineering for Generative Art (SEGA) 2026
-                Workshop
-            </h1>
-            <h2 class="font-weight-bold pt-3 header-text">
-                July 6th, 2026 (afternoon)
-            </h2>
-     </div>
-     <script>
+        <header id="header" class="jumbotron text-end text-white"> <!--bg-dark">-->
+            <div class="container">
+            </div>
+            <div id="script-author">
+            </div>
+        </header>
+    </div>
+    <div id="sub-header">
+        <h1 class="font-weight-bold pt-5 pb-3 header-text">
+            Software Engineering for Generative Art (SEGA) 2026
+            Workshop
+        </h1>
+        <h2 class="font-weight-bold pt-3 header-text">
+            July 6th, 2026 (afternoon)
+        </h2>
+    </div>
+    <script>
         // pick a random sketch to show on load
         let author_urls = {
             'Erik Fredericks': 'https://efredericks.github.io',
             'Benoit + p5✨': 'https://softwarediversity.eu',
-	    'Abigail Diller': 'https://acdiller.github.io/',
+            'Abigail Diller': 'https://acdiller.github.io/',
         }
         let js_files = [
-            {'script': 'baudry-sega-1.js', 'author': 'Benoit + p5✨'},
-            {'script': 'baudry-sega-2.js', 'author': 'Benoit + p5✨'},
-            {'script': 'fredericks-sega-2.js', 'author': 'Erik Fredericks'},
-            {'script': 'fredericks-sega-3.js', 'author': 'Erik Fredericks'},
-            {'script': 'fredericks-sega-4.js', 'author': 'Erik Fredericks'},
-            {'script': 'fredericks-sega-5.js', 'author': 'Erik Fredericks'},
-            {'script': 'diller-sega-bead-curtain.js', 'author': 'Abigail Diller'},
-            {'script': 'diller-sega-eca.js', 'author': 'Abigail Diller'},
-            {'script': 'diller-sega-flowfield.js', 'author': 'Abigail Diller'},
+            { 'script': 'baudry-sega-1.js', 'author': 'Benoit + p5✨' },
+            { 'script': 'baudry-sega-2.js', 'author': 'Benoit + p5✨' },
+            { 'script': 'fredericks-sega-2.js', 'author': 'Erik Fredericks' },
+            { 'script': 'fredericks-sega-3.js', 'author': 'Erik Fredericks' },
+            { 'script': 'fredericks-sega-4.js', 'author': 'Erik Fredericks' },
+            { 'script': 'fredericks-sega-5.js', 'author': 'Erik Fredericks' },
+            { 'script': 'diller-sega-bead-curtain.js', 'author': 'Abigail Diller' },
+            { 'script': 'diller-sega-eca.js', 'author': 'Abigail Diller' },
+            { 'script': 'diller-sega-flowfield.js', 'author': 'Abigail Diller' },
         ];
-        let index = Math.floor(Math.random()*js_files.length); 
+        let index = Math.floor(Math.random() * js_files.length);
         const the_file = js_files[index].script;
         const scriptElement = document.createElement('script');
         scriptElement.src = `./js/sketches/${the_file}`;
@@ -92,7 +95,7 @@
         let author = js_files[index].author;
         let author_url = author_urls[author];
         document.getElementById("script-author").innerHTML = `Author: <a href='${author_url}' target='_blank'>${author}</a>`;
-     </script>
+    </script>
     <!-- header end -->
     <!-- introSection -->
     <!-- 設定introSection 上下padding為5倍 -->
@@ -108,20 +111,28 @@
                 arts, algorithmic art and creative coding will be a forum to share ideas, methods and techniques to
                 support generative artists in their practice, to use arts as an inclusive means of teaching software
                 engineering, and to perform visual, sound and interactive art performances.
-                This workshop proposal follows on an ongoing special issue for the <a href="https://www.computer.org/digital-library/magazines/co/cfp-software-engineering-generative-art" target="_blank">IEEE Computer magazine
-                about Software Engineering in Generative Art</a>.
+                This workshop proposal follows on an ongoing special issue for the <a
+                    href="https://www.computer.org/digital-library/magazines/co/cfp-software-engineering-generative-art"
+                    target="_blank">IEEE Computer magazine
+                    about Software Engineering in Generative Art</a>.
             </p>
             <h5 class="text-secondary mt-4">Workshop General Co-Chairs</h5>
             <ul class="text-secondary">
-                <li style="font-size:medium"><a href="https://softwarediversity.eu/" target="_blank">Benoit Baudry</a>, University of Montreal</li>
-                <li style="font-size:medium"><a href="https://efredericks.github.io" target="_blank">Erik Fredericks</a>, Grand Valley State University</li>
+                <li style="font-size:medium"><a href="https://softwarediversity.eu/" target="_blank">Benoit Baudry</a>,
+                    University of Montreal</li>
+                <li style="font-size:medium"><a href="https://efredericks.github.io" target="_blank">Erik
+                        Fredericks</a>, Grand Valley State University</li>
             </ul>
             <h5 class="text-secondary mt-4">Workshop Organizing and Curatorial Crew</h5>
             <ul class="text-secondary">
-                <li style="font-size:medium"><a href="https://maveme.github.io/" target="_blank">Mauricio Verano Merino</a>, Vrije Universiteit Amsterdam</li>
-                <li style="font-size:medium"><a href="https://acdiller.github.io/" target="_blank">Abigail Diller</a>, Grand Valley State University</li>
-                <li style="font-size:medium"><a href="https://alsum-wassenaar.com/" target="_blank">Sara Alsum-Wassenaar</a>, Grand Valley State University</li>
-                <li style="font-size:medium"><a href="https://www.roxypm10.net/" target="_blank">Roxana Peña Mendieta</a>, University of Montreal</li>
+                <li style="font-size:medium"><a href="https://maveme.github.io/" target="_blank">Mauricio Verano
+                        Merino</a>, Vrije Universiteit Amsterdam</li>
+                <li style="font-size:medium"><a href="https://acdiller.github.io/" target="_blank">Abigail Diller</a>,
+                    Grand Valley State University</li>
+                <li style="font-size:medium"><a href="https://alsum-wassenaar.com/" target="_blank">Sara
+                        Alsum-Wassenaar</a>, Grand Valley State University</li>
+                <li style="font-size:medium"><a href="https://www.roxypm10.net/" target="_blank">Roxana Peña
+                        Mendieta</a>, University of Montreal</li>
             </ul>
     </section>
     <!-- introSection end -->
@@ -129,28 +140,35 @@
         <h2 class="section-title text-center text-dark mb-5">Call for Submissions</h2>
         <div class="container">
             <h3>
-              📣 Calling out to artists and creatives in the SE community ✨
+                📣 Calling out to artists and creatives in the SE community ✨
             </h3>
 
-            <p>You execute code to generate visuals or sound, you use creative coding for teaching or research, you build new tools and abstractions for artists, you explore esoteric languages for poetry and weird computation: we'd love to meet and hear from you!</p>
+            <p>You execute code to generate visuals or sound, you use creative coding for teaching or research, you
+                build new tools and abstractions for artists, you explore esoteric languages for poetry and weird
+                computation: we'd love to meet and hear from you!</p>
 
-            <p>With SEGA, the first workshop on software engineering and generative arts, we aim at offering everyone who operates at the fringe of software and art an open forum to share, discuss and perform. Please, reach out with a demo,  presentation or performance idea! We welcome submissions of <b>one page</b> within the <a href="https://www.latextemplates.com/template/arsclassica-article" target="_blank">Arsclassica Article Latex template</a>.</p>
+            <p>With SEGA, the first workshop on software engineering and generative arts, we aim at offering everyone
+                who operates at the fringe of software and art an open forum to share, discuss and perform. Please,
+                reach out with a demo, presentation or performance idea! We welcome submissions of <b>one page</b>
+                within the <a href="https://www.latextemplates.com/template/arsclassica-article"
+                    target="_blank">Arsclassica Article Latex template</a>.</p>
 
             <ul>
-            <li>
-                <b>Deadline for submission: March 16, 2026.</b>
-            </li>
-            <li>
-                <b>Author notification: April 12, 2026.</b>
-            </li>
-            <li>
-                <b>Website for submission: 
-                    <a href="https://sega26.hotcrp.com/" target="_blank">https://sega26.hotcrp.com/</a>
-                </b>
-            </li>
+                <li>
+                    <b>Deadline for submission: March 16, 2026.</b>
+                </li>
+                <li>
+                    <b>Author notification: April 12, 2026.</b>
+                </li>
+                <li>
+                    <b>Website for submission:
+                        <a href="https://sega26.hotcrp.com/" target="_blank">https://sega26.hotcrp.com/</a>
+                    </b>
+                </li>
             </ul>
 
-            <p>As a source of inspiration rather than a closed list of topics, let us suggest some ideas of topics that we'd love to discuss with you:</p> 
+            <p>As a source of inspiration rather than a closed list of topics, let us suggest some ideas of topics that
+                we'd love to discuss with you:</p>
 
             <h3>Generative Artworks / Software Technologies for the Arts</h3>
 
@@ -187,9 +205,11 @@
                 <li>Capture and replay for software-based artworks</li>
             </ul>
 
-            <p>Note that our on-site equipment will be limited to a projector screen, so if you require any specialized hardware we'd suggest either recording a demo video or bringing what is necessary!</p>
+            <p>Note that our on-site equipment will be limited to a projector screen, so if you require any specialized
+                hardware we'd suggest either recording a demo video or bringing what is necessary!</p>
 
-            <p>The proceedings will be published as an open-source web zine and will be hosted on our GitHub repository.</p>
+            <p>The proceedings will be published as an open-source web zine and will be hosted on our GitHub repository.
+            </p>
 
         </div>
     </section>
@@ -198,8 +218,6 @@
         <h2 class="section-title text-center text-dark mb-5">Agenda</h2>
         <!-- table in the container => table width will not be screen width  -->
         <div class="container">
-            Schedule TBD
-            <!--
             <table class="table table-bordered">
                 <thead>
                     <tr class="cent">
@@ -209,97 +227,155 @@
                 <tbody>
                     <tr class="cent">
                         <th scope="row">Time**</th>
-                        <th>Session Title</th>
+                        <th>Title</th>
                         <th>Speaker(s)</th>
                     </tr>
                     <tr>
-                        <td scope="row">9:00 AM – 9:15 AM</td>
+                        <td scope="row">14:00 – 14:05</td>
                         <td>Workshop Welcome</td>
-                        <td>Workshop Co-Chairs</td>
+                        <td>Workshop co-chairs: Benoit Baudry and Erik Fredericks</td>
                     </tr>
                     <tr>
-                        <td scope="row">9:15 AM – 10:00 AM</td>
-                        <td>Keynote</td>
-                        <td>Dr. Philip Yu, UIC CS</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">10:00 AM – 10:30 AM</td>
-                        <td>Industry Session 1</td>
-                        <td>Dr. Chung-Sheng Li, PWC</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">10:30 AM – 11:00 AM</td>
-                        <td>Industry Session 2</td>
-                        <td>Emily White, Nike</td>
+                        <td scope="row">14:05 – 14:50</td>
+                        <td>Keynote (via Zoom)</td>
+                        <td>Patricia Falcao</td>
                     </tr>
                     <tr class="cent">
-                        <td scope="row" colspan="3">Break (11:00 AM – 11:30 AM)</td>
+                        <td scope="row" colspan="3"><strong>Session 1</strong></td>
                     </tr>
                     <tr>
-                        <td scope="row">11:30 AM – 12:10 PM</td>
-                        <td>Senior Academic AI4BI Perspectives - Session 1</td>
-                        <td>Dr. Hsinchun Chen, UArizona MIS</td>
+                        <td scope="row">14:50 - 15:10</td>
+                        <td>
+                            momentum.js: Integrating Generative Art and Timeline-Based Animation
+                        </td>
+                        <td>
+                            Chenrui Hu
+                        </td>
                     </tr>
                     <tr>
-                        <td scope="row">12:10 PM – 12:50 PM</td>
-                        <td>Senior Academic AI4BI Perspectives - Session 2</td>
-                        <td>Dr. Hsin-Hsi Chen, NTU CS</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">12:50 PM – 1:30 PM</td>
-                        <td>Senior Academic AI4BI Perspectives - Session 3</td>
-                        <td>TBD</td>
+                        <td scope="row">15:10 – 15:30</td>
+                        <td>
+                            GhostEditor: Versioning Creative Coding Sessions
+                        </td>
+                        <td>
+                            Maximilian Mayer and Mauricio Verano Merino
+                        </td>
                     </tr>
                     <tr class="cent">
-                        <td scope="row" colspan="3">Water Break (1:30 PM – 1:45 PM)</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">1:45 PM – 2:15 PM </td>
-                        <td>Academic Short Session 1</td>
-                        <td>Dr. Chih-Ping Wei, NTU IM</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">2:15 PM – 2:45 PM</td>
-                        <td>Academic Short Session 2</td>
-                        <td>Dr. Sagar Samtani, IU ODT (IS)</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">2:45 PM – 3:15 PM </td>
-                        <td>Academic Short Session 3</td>
-                        <td>Dr. Chien-Chin Chen, NTU IM</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">3:15 PM – 3:45 PM</td>
-                        <td>Academic Short Session 4</td>
-                        <td>Dr. Hsin-Min Lu, NTU IM</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">3:45 PM – 4:45 PM </td>
-                        <td>AI4BI Panel</td>
-                        <td><strong>Panelists: </strong>Drs. H Chen, CP Wei, Sagar Samtani, HM Lu</td>
+                        <td scope="row" colspan="3">
+                            <strong>
+                                Coffee break (15:30 - 16:00)
+                            </strong>
+                        </td>
                     </tr>
                     <tr class="cent">
-                        <td scope="row" colspan="3"><strong>Workshop Conclusion</strong></td>
+                        <td scope="row" colspan="3">
+                            <strong>
+                                Session 2
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16:00 - 16:20</td>
+                        <td>
+                            Evolving 3D Art Forms
+                        </td>
+                        <td>
+                            Ecem Heywood, Stephen Kelly, and Eryn Foster
+                        </td>
+                    </tr>
+                    <tr class="cent">
+                        <td scope="row" colspan="3">
+                            <strong>
+                                Creative Coding Challenge Session (Demos)
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16:20 - 16:30</td>
+                        <td>Session Introduction</td>
+                        <td>Workshop co-chairs: Benoit Baudry and Erik Fredericks</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16:30 - 17:45</td>
+                        <td>Live demos</td>
+                        <td><i>All are welcome to participate!</i></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">17:50 - 18:00</td>
+                        <td>Workshop closing</td>
+                        <td>Workshop co-chairs: Benoit Baudry and Erik Fredericks</td>
                     </tr>
                 </tbody>
             </table>
-            <p>* Schedule is subject to change based on the availability of speakers. Short speaker bios and
-                abstracts will be provided after the speakers are confirmed and the schedule is finalized.
+            <p>* Schedule is subject to change based on the availability of speakers.
                 <br>** Total time listed includes a question and answer (Q&A) session.
             </p>
-        -->
         </div>
     </section>
     <!-- agendaSection end -->
+
+    <section id="keynoteSection" class="pt-5 pb-5" style="background: #cccccc33">
+        <h2 class="section-title text-center text-dark mb-5">Keynote</h2>
+        <div class="container">
+            <h3>
+                Patricia Falcao
+            </h3>
+
+            <h4>Bio</h4>
+            <p>
+                Patricia Falcao is a time-based media conservator at Tate Modern in London, UK. She researches and
+                develops strategies for the preservation of software-based artworks. More recently, in the context of
+                the Reshaping the Collectible project this has broadened to include the acquisition and preservation of
+                web-based artworks. She has consistently published on the theme of preservation of Time-based media,
+                Digital and Software-based art over the last 8 years, in the Conservation and Digital Preservation
+                Communities.
+            </p>
+            <h4>Abstract</h4>
+            <p>TBD</p>
+        </div>
+    </section>
+    <section id="codingSection" class="pt-5 pb-5">
+        <h2 class="section-title text-center text-dark mb-5">Creative Coding Challenge - MoMA</h2>
+        <div class="container">
+            <h3>Call for Participation</h3>
+            <p>
+                As part of the SEGA workshop we have a hands-on session to explore the <a href="http://www.moma.org" target="_blank" alt="Museum of Modern Art">Museum of Modern
+                Art's</a> <a href="https://github.com/MuseumofModernArt/" target="blank" alt="MoMA GitHub Organization">Github organization</a>.
+            </p>
+
+            <p>
+                We would love to see as many creative coding, dataviz, repository mining demos as possible, with this
+                unique open source organization by a major art insitution. There is code, data, contributors, comments,
+                commits, lots of inspiring material for software engineering and the arts.
+            </p>
+
+            <p>
+                We welcome demos on the full spectrum from gen art to data mining. For example, you can think of doing
+                an artwork fed by the <a target="_blank" alt="MoMA collection" href="https://github.com/MuseumofModernArt/collection">MoMA collection</a>, or doing a short presentation about the history of commits or contributors across their <a href="https://github.com/MuseumofModernArt/" target="blank" alt="MoMA GitHub Organization">Github organization</a>.
+            </p>
+
+            <p>
+                The demos will take place as part of the afternoon session - there is no submission required and all
+                are welcome to participate!
+            </p>
+
+            <p>
+                If you want to know more, share some ideas, discuss the details of this call, don't hesitate to drop us
+                an email: benoit.baudry@umontreal, frederer@gvsu.edu
+            </p>
+        </div>
+    </section>
     <!-- speakerSection -->
+    <!-- <section id="speakerSection" class="pt-5 pb-5" style="background: #cccccc33"> -->
     <section id="speakerSection" class="pt-5 pb-5" style="background: #cccccc33">
-        <h2 class="section-title text-center text-dark mb-5">Accepted Papers</h2>
+        <h2 class="section-title text-center text-dark mb-5">Creative Coding Challenge</h2>
         <div class="row justify-content-center py-8">
             <div class="col-sm-2 col-6">
                 <h5 class="organization">Chenrui Hu</h5>
             </div>
             <div class="col-sm-6 col-8 align-self-center">
-		    <h5>momentum.js: Integrating Generative Art and Timeline-Based Animation</h5>
+                <h5>momentum.js: Integrating Generative Art and Timeline-Based Animation</h5>
             </div>
         </div>
         <div class="row justify-content-center py-1">
@@ -307,7 +383,7 @@
                 <h5 class="organization">Maximilian Mayer and Mauricio Verano Merino</h5>
             </div>
             <div class="col-sm-6 col-8 align-self-center">
-		    <h5>GhostEditor: Versioning Creative Coding Sessions</h5>
+                <h5>GhostEditor: Versioning Creative Coding Sessions</h5>
             </div>
         </div>
         <div class="row justify-content-center py-1">
@@ -315,13 +391,13 @@
                 <h5 class="organization">Ecem Heywood, Stephen Kelly, and Eryn Foster</h5>
             </div>
             <div class="col-sm-6 col-8 align-self-center">
-		    <h5>Evolving 3D Art Forms</h5>
+                <h5>Evolving 3D Art Forms</h5>
             </div>
         </div>
     </section>
     <!-- speakerSection end -->
     <!-- sponsorSection -->
-     <!--
+    <!--
     <section id="sponsorSection" class="pt-2 pb-5">
         <h2 class="section-title text-center text-dark mb-5">Sponsors</h2>
         <div class="container">
